@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        /*!important这是强制模式*/
+        .border1{
+            border: 1px solid #666 !important;
+        }
+        @media screen and (min-width:600px) and (max-width:900px) {
+            body {background-color:#b92c28;}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello Bootstrap</h1>
+
+    <!--div.container 再点击Tab键-->
+    <div class="container">
+        <div class="row">
+            <!--ol-xs-6 手机样式（媒体特性）-->
+            <div class="col-md-6 col-xs-6 border1">左</div>
+            <div class="col-md-6 col-xs-6 border1">右</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 border1">左</div>
+            <div class="col-md-6 border1">右</div>
+        </div>
+
+        <div class="row">
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                <th>name</th>
+                <th>remarks</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>其它字体图标库</td>
+                    <td><a href="http://fontawesome.dashgame.com/">FontAwesome</a></td>
+                </tr>
+                <tr>
+                    <td>其它字体图标库</td>
+                    <td><a href="https://icons8.com/line-awesome">LineAwesome</a></td>
+                </tr>
+                <tr>
+                    <td>其它字体图标库</td>
+                    <td><a href="http://www.socicon.com/chart.php">SocialIcons</a></td>
+                </tr>
+                <tr>
+                    <td>其它字体图标库</td>
+                    <td><a href="http://www.iconfont.cn/">阿里巴巴矢量图标库</a></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--如需使用图标，只需要简单地使用下面的代码即可：-->
+
+    <span class="glyphicon glyphicon-search" style="font-size: 100px; color: #f10215;"></span>
+
+
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
